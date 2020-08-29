@@ -1,0 +1,26 @@
+﻿<Page x:Class="Quiz_DanielPatiño.Login"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Quiz_DanielPatiño"
+      mc:Ignorable="d" 
+      d:DesignHeight="350" d:DesignWidth="790"
+      Title="Login">
+
+    <Grid>
+        <Grid.OpacityMask>
+            <ImageBrush ImageSource="/Gaseosas_Quiz.jpg"/>
+        </Grid.OpacityMask>
+        <Grid.Background>
+            <ImageBrush ImageSource="/Postobon.jpg"/>
+        </Grid.Background>
+        <Label Content="Inicio" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="36" Margin="0,26,0,0" FontWeight="Bold" FontStyle="Italic" Background="{x:Null}" FontFamily="Segoe UI"/>
+        <Label Content="Usuario" HorizontalAlignment="Left" Margin="250,126,0,0" VerticalAlignment="Top" Height="36" FontSize="24" Foreground="Black" BorderBrush="Black" Background="#3FFFFFFF" FontWeight="Bold" Width="140" FontFamily="Segoe UI"/>
+        <Label Content="Contraseña" HorizontalAlignment="Left" Margin="250,167,0,0" VerticalAlignment="Top" Height="37" FontSize="24" Background="#3FFFFFFF" Width="145" FontWeight="Bold" FontFamily="Segoe UI"/>
+        <TextBox Name="txtUsername" HorizontalAlignment="Left" Margin="395,132,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="145" Height="30" FontSize="20" FontFamily="Consolas" FontWeight="Bold"/>
+        <PasswordBox x:Name="txtPassword" HorizontalAlignment="Left" Margin="395,174,0,0" VerticalAlignment="Top" Width="145" Height="30" FontSize="20" FontFamily="Consolas" FontWeight="Bold"/>
+        <Button Name="btnLogin" Content="Iniciar Sesión" HorizontalAlignment="Center" Margin="0,266,0,0" VerticalAlignment="Top" Height="46" Width="173" FontSize="24" FontWeight="Bold" Background="#FFEA2929" Click="btnLogin_Click"/>
+
+    </Grid>
+</Page>

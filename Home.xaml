@@ -1,0 +1,27 @@
+﻿<Page x:Class="Quiz_DanielPatiño.Home"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Quiz_DanielPatiño"
+      mc:Ignorable="d" 
+      d:DesignHeight="350" d:DesignWidth="790"
+      Title="Home">
+
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/Postobon2.jpg"/>
+        </Grid.Background>
+        <ComboBox Name="cmbProductos" HorizontalAlignment="Left" Margin="58,183,0,0" VerticalAlignment="Top" Width="176" Height="33" FontSize="18" FontWeight="Bold"/>
+        <CheckBox Name="cbGaseosas" Content="Gaseosas" HorizontalAlignment="Left" Margin="60,129,0,0" VerticalAlignment="Top" Checked="cbGaseosas_Checked" Unchecked="cbGaseosas_Unchecked" FontWeight="Bold" FontSize="18" Height="21" FontFamily="Segoe UI"/>
+        <CheckBox Name="cbJugos" Content="Jugos" HorizontalAlignment="Left" Margin="60,155,0,0" VerticalAlignment="Top" Checked="cbJugos_Checked" Unchecked="cbJugos_Unchecked" FontSize="18" FontWeight="Bold"/>
+        <ListBox Name="lbProductos" Margin="287,10,211,10" BorderBrush="Black" Background="#3FFFFFFF" FontSize="18" FontWeight="Bold" FontFamily="Segoe UI"/>
+        <Button Name="btnAgregar" Content="Agregar a la lista" HorizontalAlignment="Left" Margin="58,236,0,0" VerticalAlignment="Top" Click="btnAgregar_Click" Width="176" FontSize="18" FontWeight="Bold"/>
+        <Button Name="btnRemover" Content="Remover de la lista" HorizontalAlignment="Left" Margin="58,286,0,0" VerticalAlignment="Top" Width="176" Click="btnRemover_Click" FontSize="18" FontWeight="Bold"/>
+        <Label Content="Todos los productos por &#xD;&#xA;tan solo 2000 pesitos" HorizontalAlignment="Left" Margin="34,33,0,0" VerticalAlignment="Top" Height="59" Width="224" FontWeight="Bold" FontSize="18" HorizontalContentAlignment="Left" />
+        <Button Content="Realizar pedido" HorizontalAlignment="Left" Height="45" Margin="603,36,0,0" VerticalAlignment="Top" Width="155" FontSize="18" FontWeight="Bold" Click="Button_Click"/>
+        <Label Name="lbltxtValor" Content="Valos a pagar:" HorizontalAlignment="Left" Margin="603,86,0,0" VerticalAlignment="Top" Height="46" Width="155" Background="#FFDDDDDD" FontWeight="Bold" FontSize="18"/>
+        <Label Name="lblPrecio" Visibility="Hidden" Content=" " HorizontalAlignment="Left" Margin="603,137,0,0" VerticalAlignment="Top" Height="38" Width="155" Background="#FFDDDDDD" FontSize="18" FontWeight="Bold"/>
+        <Button Name="btnLogout" Content="Cerrar Sesión" HorizontalAlignment="Left" Margin="603,278,0,0" VerticalAlignment="Top" Height="43" Width="152" FontWeight="Bold" FontSize="18" Click="btnLogout_Click"/>
+    </Grid>
+</Page>

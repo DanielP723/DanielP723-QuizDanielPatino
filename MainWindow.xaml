@@ -1,0 +1,17 @@
+﻿<Window x:Class="Quiz_DanielPatiño.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Quiz_DanielPatiño"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" Loaded="Window_Loaded">
+    <Grid Margin="0,0,-10,0" Background="#FFF9E300">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Refrescos Jaimes" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="36" FontWeight="Bold" FontFamily="Segoe UI" Margin="0,-8,0,0"/>
+        <Frame Name="frame_Main" Content="" Margin="0,74,0,0" Visibility="Visible" NavigationUIVisibility="Hidden" />
+
+    </Grid>
+</Window>
